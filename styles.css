@@ -22,6 +22,8 @@
   color: black;
   list-style: none;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding: 90px;
 }
 
 body {
@@ -29,7 +31,13 @@ body {
   font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-size: 1rem;
 }
 
@@ -65,12 +73,13 @@ h1,h2,h3,h4,h5,h6,p{
   border-radius: 100%;
 }
 
-.fixed{
+.fixed {
   position: fixed;
 }
 
 .drop-shadow {
-  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+    drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
 .gap-sm {
@@ -90,7 +99,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .gap-xl {
-  gap: 2.0rem;
+  gap: 2rem;
 }
 
 .gap-2xl {
@@ -124,6 +133,16 @@ h1,h2,h3,h4,h5,h6,p{
   border-right: 1px solid black;
 }
 
+.ruler {
+  border-bottom: 1px solid #c7c7c7;
+  margin: 40px;
+}
+
+.internal-ruler {
+  border-bottom: 1px solid #dad8d8;
+  margin: 40px 90px;
+}
+
 /**********************************************/
 /************** CTA button ********************/
 /**********************************************/
@@ -131,14 +150,14 @@ h1,h2,h3,h4,h5,h6,p{
 .cta {
   padding: 0.7rem 2.4rem;
   border-radius: 20px;
-  background-color: #116DFF;
+  background-color: #116dff;
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
   color: white;
 }
 .cta:hover {
-  background-color: #0A5BFF;
+  background-color: #0a5bff;
 }
 
 /**********************************************/
@@ -152,7 +171,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .nav__logo {
-  font-family: 'work sans';
+  font-family: "work sans";
   font-weight: 500;
   font-size: 1.4rem;
 }
@@ -162,7 +181,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .nav__links ul a:hover {
-  color: #116DFF;
+  color: #116dff;
 }
 
 /**********************************************/
@@ -194,6 +213,61 @@ h1,h2,h3,h4,h5,h6,p{
 
 #hero article > .cta {
   width: 10rem;
+}
+
+/**********************************************/
+/************* Resume Section *****************/
+/**********************************************/
+
+#resume > h1 ,
+#projects > h1 ,
+#contact-me h1 {
+  font-size: 3rem;
+  padding-left: 8rem;
+}
+
+.title,
+.desc {
+  width: calc(var(--container-size) * 1.4);
+}
+
+.title {
+  font-size: 2rem;
+  padding-left: 100px;
+}
+
+.skills > ul  li {
+  list-style-type: circle;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/**********************************************/
+/************* Projects Section *****************/
+/**********************************************/
+
+{
+  font-size: 3rem;
+  padding-left: 8rem;
+}
+
+.project-child > img{
+  width: 400px;
+  margin: 20px 50px;
+}
+
+
+/**********************************************/
+/************* Contact-Me Section *****************/
+/**********************************************/
+
+#contact-me .title{
+  font-size: 1rem;
+}
+
+#contact-me input{
+  border:1px solid black;
+  background-color: #f3f3f3;
 }
 
 
