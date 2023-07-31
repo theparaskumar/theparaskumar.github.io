@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@600&display=swap");
+
+:root {
+  --container-size: 33vw;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-size: 16px;
+}
+
+.separator {
+  border-right: 1px solid black;
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0;
+  z-index: 9999;
+  font-size: small;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.profile-pic,
+.intro {
+  width: var(--container-size);
+}
+
+.intro {
+  gap: 2.4rem;
+}
+
+.intro > article {
+  gap: 0.8rem;
+}
+
+.intro > article > div {
+  gap: 0.4rem;
+}
+
+.salutation {
+  font-size: 6.25rem;
+  font-family: "work sans", Roboto, sans-serif;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+.intro-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.intro-para {
+  font-weight: 300;
+  line-height: 1.3rem;
+  letter-spacing: 1.2;
+}
+
+.cardholder {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0;
+}
+
+.card {
+  width: calc(var(--container-size) / 3.5);
+  height: calc(var(--container-size) / 3.5);
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+}
+.card > p {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume {
+  background-color: #eea302;
+}
+
+.projects {
+  background-color: #ff3b25;
+}
+
+.contact {
+  background-color: #80D8DA;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+
+.linkedin-logo {
+  width: 25px;
+}
