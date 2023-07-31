@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@600&display=swap");
 
+/**********************************************/
+/*********** Variables declaration ************/
+/**********************************************/
+
 :root {
   --container-size: 33vw;
 }
+
+/**********************************************/
+/******** Basic Setting & Resetting ***********/
+/**********************************************/
 
 * {
   padding: 0;
@@ -21,132 +29,175 @@ body {
   font-size: 16px;
 }
 
-.separator {
-  border-right: 1px solid black;
+h1,h2,h3,h4,h5,h6,p{
+  font-size: 1rem;
 }
 
-.rounded-full {
-  border-radius: 100%;
-}
+/**********************************************/
+/************* Utility Classes ****************/
+/**********************************************/
 
 .flex {
   display: flex;
 }
 
 .flex-col {
-  display: flex;
   flex-direction: column;
 }
 
 .flex-row {
-  display: flex;
   flex-direction: row;
 }
 
-.navbar {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  display: flex;
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
   justify-content: space-between;
+}
+
+.items-center {
   align-items: center;
-  padding: 0 15px 0;
-  z-index: 9999;
-  font-size: small;
 }
 
-.nav__links {
-  display: flex;
-  gap: 1.2rem;
+.rounded-full {
+  border-radius: 100%;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  gap: 2rem;
+.fixed{
+  position: fixed;
 }
 
-main {
-  min-height: 100vh;
+.drop-shadow {
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
 }
 
-.profile-pic,
-.intro {
-  width: var(--container-size);
-}
-
-.intro {
-  gap: 2.4rem;
-}
-
-.intro > article {
-  gap: 0.8rem;
-}
-
-.intro > article > div {
+.gap-sm {
   gap: 0.4rem;
 }
 
-.salutation {
+.gap-md {
+  gap: 0.8rem;
+}
+
+.gap-base {
+  gap: 1.2rem;
+}
+
+.gap-lg {
+  gap: 1.6rem;
+}
+
+.gap-xl {
+  gap: 2.0rem;
+}
+
+.gap-2xl {
+  gap: 2.4rem;
+}
+
+.z-max {
+  z-index: 9999;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: #eea302;
+  border-radius: 100%;
+}
+
+.separator {
+  border-right: 1px solid black;
+}
+
+/**********************************************/
+/************** CTA button ********************/
+/**********************************************/
+
+.cta {
+  padding: 0.7rem 2.4rem;
+  border-radius: 20px;
+  background-color: #116DFF;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+}
+.cta:hover {
+  background-color: #0A5BFF;
+}
+
+/**********************************************/
+/**************** Navbar **********************/
+/**********************************************/
+
+.navbar {
+  height: 70px;
+  padding: 0 4rem;
+  background-color: #fff;
+}
+
+.nav__logo {
+  font-family: 'work sans';
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.nav__logo > a {
+  margin-top: 2px;
+}
+
+.nav__links ul a:hover {
+  color: #116DFF;
+}
+
+/**********************************************/
+/************* Hero Section *******************/
+/**********************************************/
+
+#hero img,
+#hero article {
+  width: var(--container-size);
+}
+
+#hero article > h1 {
   font-size: 6.25rem;
   font-family: "work sans", Roboto, sans-serif;
   font-weight: 500;
-  margin-top: 80px;
 }
 
-.intro-heading {
+#hero article > div > h2 {
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-.intro-para {
+#hero article > div > p {
   font-weight: 300;
   line-height: 1.3rem;
   letter-spacing: 1.2;
 }
 
-.cardholder {
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px 0;
-}
-
-.card {
-  width: calc(var(--container-size) / 3.5);
-  height: calc(var(--container-size) / 3.5);
-  text-align: center;
-  border: 1px solid black;
-  position: relative;
-}
-.card > p {
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.resume {
-  background-color: #eea302;
-}
-
-.projects {
-  background-color: #ff3b25;
-}
-
-.contact {
-  background-color: #80D8DA;
-}
+/**********************************************/
+/************* Footer Section *****************/
+/**********************************************/
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 60px;
+  padding: 2rem 4rem;
+  background-color: #fff;
 }
 
 .linkedin-logo {

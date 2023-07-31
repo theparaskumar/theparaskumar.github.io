@@ -1,71 +1,82 @@
-<html>
-
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paras Kumar</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <h1 class="nav__logo">
-                <a href="index.html">Paras Kumar</a>
-            </h1>
-            <ul class="nav__links">
-                <li>
-                    <a href="resume.html">Resume</a>
-                </li>
-                <span class="separator"></span>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <span class="separator"></span>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <nav
+        class="navbar flex items-center justify-between drop-shadow fixed z-max w-full"
+      >
+        <h1 class="nav__logo flex items-center gap-md">
+          <span class="circle"></span>
+          <a href="index.html">Paras Kumar</a>
+        </h1>
+        <div class="nav__links flex justify-center items-center gap-xl">
+          <ul class="flex gap-base">
+            <li>
+              <a href="resume.html">Resume</a>
+            </li>
+            <span class="separator"></span>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <button>
+            <a class="cta" href="contact.html">Contact Me</a>
+          </button>
+        </div>
+      </nav>
     </header>
-    <main>
-        <section class="hero">
-            <img src="images/paras-photo.jpg" alt="Profile Photo" class="profile-pic rounded-full">
-            <div class="intro flex-col">
-                <article class="flex-col">
-                    <h1 class="salutation">Hello</h1>
-                    <div class="flex-col">
-                        <h2 class="intro-heading">A Bit About Me</h2>
-                        <p class="intro-para">I'm Paras Kumar, an ambitious web designer/developer with a passion for
-                            creating
-                            visually stunning websites using HTML, CSS, and JavaScript, while continuously learning and
-                            growing
-                            in a dynamic professional environment.</p>
-                    </div>
-                </article>
-                <div class="cardholder flex">
-                    <a href="resume.html" class="resume card rounded-full"><p>Resume</p></a>
-                    <a href="projects.html" class="projects card rounded-full"><p>Projects</p></a>
-                    <a href="contact.html" class="contact card rounded-full"><p>Contact</p></a>
-                </div>
+    <main class="min-h-screen">
+      <section id="hero" class="flex justify-center items-center h-screen">
+        <div class="flex items-center gap-xl">
+          <img
+            src="images/paras-photo.jpg"
+            alt="Profile Photo"
+            class="rounded-full"
+          />
+          <article class="flex flex-col gap-md">
+            <h1>Hello</h1>
+            <div class="flex flex-col gap-sm">
+              <h2>A Bit About Me</h2>
+              <p>
+                I'm Paras Kumar, an ambitious web designer/developer with a
+                passion for creating visually stunning websites using HTML, CSS,
+                and JavaScript, while continuously learning and growing in a
+                dynamic professional environment.
+              </p>
             </div>
-        </section>
+            <button>
+              <a class="cta" href="contact.html">Contact Me</a>
+            </button>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div>
-            <h4>Phone</h4>
-            <a href="tel:+917500686812">+91 7500686812</a>
-        </div>
-        <div>
-            <h4>Email</h4>
-            <a href="mailto: paraskm6812@gmail.com">paraskm6812@gmail</a>
-        </div>
-        <div>
-            <h4>Follow Me</h4>
-            <a href="https://www.linkedin.com/in/paraskumar12/" target="_blank">
-                <img src="images/linkedin-logo.jpg" alt="Linkedin Logo" class="linkedin-logo">
-            </a>
-        </div>
+    <footer class="flex justify-between items-center">
+      <div>
+        <h4>Phone</h4>
+        <a href="tel:+917500686812">+91 7500686812</a>
+      </div>
+      <div>
+        <h4>Email</h4>
+        <a href="mailto: paraskm6812@gmail.com">paraskm6812@gmail</a>
+      </div>
+      <div class="flex items-center gap-md">
+        <h4>Follow Me</h4>
+        <a href="https://www.linkedin.com/in/paraskumar12/" target="_blank">
+          <img
+            src="images/linkedin-logo.png"
+            alt="Linkedin Logo"
+            class="linkedin-logo"
+          />
+        </a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
