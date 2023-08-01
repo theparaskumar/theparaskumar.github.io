@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@600&display=swap");
+/**********************************************/
+/**************** Import Fonts ****************/
+/**********************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Text&family=Work+Sans:wght@600&display=swap");
 
 /**********************************************/
 /*********** Variables declaration ************/
 /**********************************************/
 
 :root {
-  --container-size: 33vw;
+  --container-size: 34vw;
 }
 
 /**********************************************/
@@ -41,6 +45,10 @@ p {
   font-size: 1rem;
 }
 
+h1 {
+  font-family: "work sans", Roboto, sans-serif;
+}
+
 /**********************************************/
 /************* Utility Classes ****************/
 /**********************************************/
@@ -63,6 +71,14 @@ p {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .items-center {
@@ -122,13 +138,6 @@ p {
   width: 100%;
 }
 
-.circle {
-  width: 25px;
-  height: 25px;
-  background-color: #eea302;
-  border-radius: 100%;
-}
-
 .separator {
   border-right: 1px solid black;
 }
@@ -138,9 +147,13 @@ p {
   margin: 40px;
 }
 
-.internal-ruler {
-  border-bottom: 1px solid #dad8d8;
-  margin: 40px 90px;
+.container {
+  width: var(--container-size);
+}
+
+.section-heading {
+  font-size: 3rem;
+  padding-left: 8rem;
 }
 
 /**********************************************/
@@ -156,6 +169,7 @@ p {
   cursor: pointer;
   color: white;
 }
+
 .cta:hover {
   background-color: #0a5bff;
 }
@@ -170,14 +184,17 @@ p {
   background-color: #fff;
 }
 
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: #eea302;
+  border-radius: 100%;
+}
+
 .nav__logo {
   font-family: "work sans";
   font-weight: 500;
   font-size: 1.4rem;
-}
-
-.nav__logo > a {
-  margin-top: 2px;
 }
 
 .nav__links ul a:hover {
@@ -187,11 +204,6 @@ p {
 /**********************************************/
 /************* Hero Section *******************/
 /**********************************************/
-
-#hero img,
-#hero article {
-  width: var(--container-size);
-}
 
 #hero article > h1 {
   font-size: 6.25rem;
@@ -216,70 +228,84 @@ p {
 }
 
 /**********************************************/
-/************* Resume Section *****************/
-/**********************************************/
-
-#resume > h1 ,
-#projects > h1 ,
-#contact-me h1 {
-  font-size: 3rem;
-  padding-left: 8rem;
-}
-
-.title,
-.desc {
-  width: calc(var(--container-size) * 1.4);
-}
-
-.title {
-  font-size: 2rem;
-  padding-left: 100px;
-}
-
-.skills > ul  li {
-  list-style-type: circle;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/**********************************************/
 /************* Projects Section *****************/
 /**********************************************/
 
-{
-  font-size: 3rem;
-  padding-left: 8rem;
+#projects > div {
+  gap: 8rem;
 }
 
-.project-child > img{
-  width: 400px;
-  margin: 20px 50px;
+#projects .container > h3 {
+  font-size: 1.25rem;
 }
 
+#projects .container p {
+  font-family: "Wix Madefor Text", "work sans", sans-serif;
+  line-height: 1.3rem;
+  letter-spacing: 1.5;
+}
 
+#projects .container a {
+  font-style: italic;
+  color: black;
+}
+
+#projects .container a:hover {
+  color: rgb(20, 4, 4);
+}
+
+#projects{
+  margin-bottom: 5rem;
+}
 /**********************************************/
 /************* Contact-Me Section *****************/
 /**********************************************/
 
-#contact-me .title{
-  font-size: 1rem;
+#contact-me > div > .container {
+  font-family: "Wix Madefor Text", "work sans", sans-serif;
 }
 
-#contact-me input{
-  border:1px solid black;
+#contact-me > div h6 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.first-name,
+.last-name {
+  width: calc(var(--container-size) / 2.1);
+}
+
+#contact-me input,
+#contact-me textarea {
+  border: 1px solid #565756;
   background-color: #f3f3f3;
+  padding: 0.6rem 0.3rem;
+  border-radius: 5px;
 }
 
+#contact-me button {
+  background-color: #272c38;
+}
+
+#contact-me button:hover {
+  background-color: #131723;
+}
+
+#contact-me img {
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
 
 /**********************************************/
 /************* Footer Section *****************/
 /**********************************************/
 
 footer {
-  padding: 2rem 4rem;
+  padding: 1.5rem 5rem;
   background-color: #fff;
 }
 
 .linkedin-logo {
-  width: 25px;
+  width: 24px;
 }

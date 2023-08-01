@@ -7,19 +7,29 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
+  <!-- body starts -->
+
   <body>
+    <!-- header starts -->
+
     <header>
+      <!-- navbar starts -->
       <nav
         class="navbar flex items-center justify-between drop-shadow fixed z-max w-full"
       >
-        <h1 class="nav__logo flex items-center gap-md">
-          <span class="circle"></span>
-          <a href="index.html">Paras Kumar</a>
-        </h1>
-        <div class="nav__links flex justify-center items-center gap-xl">
+        <!-- navbar logo -->
+        <a href="index.html" class="nav__logo flex items-center gap-sm">
+          <div class="circle"></div>
+          Paras Kumar</a
+        >
+
+        <!-- navbar links -->
+        <div
+          class="nav__links flex justify-center items-center justify-between gap-xl"
+        >
           <ul class="flex gap-base">
             <li>
-              <a href="#resume">Resume</a>
+              <a href="resume/paras-resume.pdf" target="_blank">Resume</a>
             </li>
             <span class="separator"></span>
             <li>
@@ -31,16 +41,28 @@
           </button>
         </div>
       </nav>
+
+      <!-- navbar ends -->
     </header>
+
+    <!-- header ends -->
+
+    <!-- main starts -->
+
     <main class="min-h-screen">
+      <!-- hero section starts -->
+
       <section id="hero" class="flex justify-center items-center h-screen">
         <div class="flex items-center gap-xl">
+          <!-- profile image -->
           <img
             src="images/paras-photo.jpg"
             alt="Profile Photo"
-            class="rounded-full"
+            class="rounded-full container"
           />
-          <article class="flex flex-col gap-md">
+
+          <!-- article -->
+          <article class="flex flex-col gap-md container">
             <h1>Hello</h1>
             <div class="flex flex-col gap-sm">
               <h2>A Bit About Me</h2>
@@ -56,102 +78,19 @@
         </div>
       </section>
 
-      <div class="ruler"></div>
-
-      <section id="resume" class="min-h-screen">
-        <h1>Resume</h1>
-        <div class="education flex justify-center w-full">
-          <h2 class="title">Education</h2>
-          <div class="desc flex flex-col gap-xl">
-            <div class="bca flex gap-base">
-              <div>2020 - 2023</div>
-              <div class="flex-col">
-                <h3>Bachelor of Computer Applications</h3>
-                <h3>Graphic Era University, Dehradun</h3>
-                <p>Done Graduation.</p>
-              </div>
-            </div>
-
-            <div class="secondary-school flex gap-base">
-              <div>2019 - 2020</div>
-              <div class="flex-col">
-                <h3>Secondary School</h3>
-                <h3>MCS Bal Vidya Peeth, Haridwar</h3>
-                <p>Done Intermediate.</p>
-              </div>
-            </div>
-
-            <div class="high-school flex gap-base">
-              <div>2017 - 2018</div>
-              <div class="flex-col">
-                <h3>High School</h3>
-                <h3>MCS Bal Vidya Peeth, Haridwar</h3>
-                <p>Done high school.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="internal-ruler"></div>
-
-        <div class="skills flex justify-center w-full">
-          <h2 class="title">Skills & Expertise</h2>
-          <ul class="desc flex flex-col gap-md">
-            <div>
-              <li>HTML</li>
-              <p>
-                HTML stands for "Hypertext Markup Language" and is the standard
-                language used to create and structure content for websites on
-                the internet.
-              </p>
-            </div>
-            <div>
-              <li>CSS</li>
-              <p>
-                CSS, which stands for "Cascading Style Sheets", is a programming
-                language used in web development to control the layout, design,
-                and presentation of HTML elements on a webpage.
-              </p>
-            </div>
-            <div>
-              <li>JavaScript</li>
-              <p>
-                JavaScript, often abbreviated as "JS", is a versatile and
-                widely-used programming language that enables dynamic and
-                interactive elements on websites, allowing developers to create
-                engaging user experiences and add functionality to web pages.
-              </p>
-            </div>
-            <div>
-              <li>Python</li>
-              <p>
-                Python is a widely-used programming language known for its
-                versatility and simplicity, making it a popular choice for
-                various applications, from web development to data analysis and
-                automation.
-              </p>
-            </div>
-            <div>
-              <li>MySQL</li>
-              <p>
-                MySQL, which stands for "My Structured Query Language", is a
-                widely-used relational database management system (RDBMS) that
-                offers fast and efficient data storage, retrieval, and
-                management, making it a popular choice for web applications,
-                data-driven websites, and various software solutions.
-              </p>
-            </div>
-          </ul>
-        </div>
-      </section>
+      <!-- hero section ends -->
 
       <div class="ruler"></div>
 
-      <section id="projects" class="min-h-screen">
-        <h1>Projects</h1>
-        <div class="flex flex-col gap-base">
-          <div class="project-child flex justify-center items-center w-full">
-            <div class="title">
+      <!-- projects section starts -->
+
+      <section id="projects" class="flex flex-col min-h-screen gap-2xl">
+        <h1 class="section-heading">Projects</h1>
+        <div class="flex flex-col">
+          <!-- first project : amazon clone -->
+
+          <div class="project-child flex justify-center justify-evenly">
+            <div class="flex flex-col container gap-md">
               <h3>Amazon Clone</h3>
               <p>
                 I developed an Amazon clone from scratch, utilizing HTML and
@@ -159,93 +98,111 @@
                 abilities in creating responsive layouts, implementing intuitive
                 interfaces, and understanding e-commerce website principles.
               </p>
+              <a href="">Check on my Github</a>
             </div>
             <img
-              src="/images/amazon-project.jpeg"
+              src="/images/amazon-project-new.jpeg"
               alt="Amazon CLone Photo"
-              class="desc"
+              class="container"
             />
           </div>
 
-          <div class="project-child flex justify-center items-center w-full">
-            <div class="title">
+          <!-- second project : iot -->
+
+          <div class="project-child flex justify-center justify-evenly">
+            <div class="flex flex-col container gap-md">
               <h3>IOT Based Security System Using RFID Card</h3>
               <p>
                 IoT based home/office security system using the RFID sensor and
                 its Tags with the help of Arduino board.
               </p>
+              <a
+                href="https://github.com/theparaskumar/Iot-security-using-RFID-card"
+                >Check on my Github</a
+              >
             </div>
             <img
-              src="/images/iot-project.jpg"
+              src="/images/iot-project-new.jpg"
               alt="IOT Project Photo"
-              class="desc"
+              class="container"
             />
           </div>
 
-          <div class="project-child flex justify-center items-center w-full">
-            <div class="title">
+          <!-- third project : face recognition -->
+
+          <div class="project-child flex justify-center justify-evenly">
+            <div class="flex flex-col container gap-md">
               <h3>Face Recognition Attendance System</h3>
               <p>
-                It Recognize students' faces using a webcam & mark their
+                It recognizes students' faces using a webcam & mark their
                 Presence.
               </p>
+              <a
+                href="https://github.com/theparaskumar/Face-Recognition-Attendance-System"
+                >Check on my Github</a
+              >
             </div>
             <img
-              src="/images/face-recog-project.jpg"
+              src="/images/face-recog-project-new.jpg"
               alt="Face Recognition Project Photo"
-              class="desc"
+              class="container"
             />
           </div>
         </div>
       </section>
+
+      <!-- projects section ends -->
 
       <div class="ruler"></div>
 
-      <section id="contact-me" class="flex flex-col min-h-screen justify-center">
-        <h1>Contact</h1>
-        <div class="flex items-center">
-          <div class="title">
-            <p>Looking forward to hearing from you.</p>
-            <h3>Phone</h3>
-            <a href="tel:+917500686812">+91 7500686812</a>
-            <h3>Email</h3>
-            <a href="mailto:paraskm6812@gmail.com">paraskm6812@gmail.com</a>
-          </div>
-          <form
-            action=""
-            class="desc flex flex-col justify-center items-center"
+      <!-- contact-me section starts -->
+
+      <section id="contact-me" class="flex flex-col min-h-screen gap-2xl">
+        <h1 class="section-heading">Get in Touch</h1>
+        <div class="flex justify-center justify-evenly gap-base">
+          <!-- contact form -->
+          <div
+            class="flex flex-col gap-xl justify-center container"
           >
-            <div class="flex gap-md">
-              <div class="flex flex-col">
-                <label for="first-name">First Name</label>
-                <input type="text" />
+            <h6>Love to hear from you :)</h6>
+            <form
+              action="mailto:paraskm6812@gmail.com"
+              class="flex flex-col gap-md"
+            >
+              <div class="name flex justify-between">
+                <label for="first name" class="first-name flex flex-col gap-sm"
+                  >First Name<input type="text" placeholder="Enter First Name"
+                /></label>
+                <label for="last name" class="last-name flex flex-col gap-sm"
+                  >Last Name<input type="text" placeholder="Enter Last Name"
+                /></label>
               </div>
-              <div class="flex flex-col">
-                <label for="last-name">Last Name</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div class="flex gap-md">
-              <div class="flex flex-col">
-                <label for="email">Email</label>
-                <input type="email" />
-              </div>
-              <div class="flex flex-col">
-                <label for="subject">Subject</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div class="flex gap-base">
-              <div class="flex flex-col">
-                <label for="message">Message</label>
-                <input type="textarea" />
-              </div>
-              <button type="cta submit">Submit</button>
-            </div>
-          </form>
+              <label for="email" class="email flex flex-col gap-sm"
+                >Email
+                <input type="email" placeholder="Enter Email" />
+              </label>
+              <label for="message" class="message flex flex-col gap-sm"
+                >Message
+                <textarea rows="5" placeholder="Leave us a Message"></textarea>
+              </label>
+              <button type="submit" class="cta">Send Message</button>
+            </form>
+          </div>
+
+          <!-- contact image -->
+          <div class="flex justify-center items-center container">
+            <img src="images/contact.png" alt="Contact Photo" />
+          </div>
         </div>
       </section>
+
+      <!-- contact-me section ends -->
     </main>
+
+    <!-- main ends -->
+
+    <!-- footer starts -->
+
     <footer class="flex justify-between items-center">
       <div>
         <h4>Phone</h4>
@@ -255,7 +212,7 @@
         <h4>Email</h4>
         <a href="mailto: paraskm6812@gmail.com">paraskm6812@gmail</a>
       </div>
-      <div class="flex items-center gap-md">
+      <div class="flex flex-col items-center">
         <h4>Follow Me</h4>
         <a href="https://www.linkedin.com/in/paraskumar12/" target="_blank">
           <img
@@ -265,6 +222,14 @@
           />
         </a>
       </div>
+      <div class="flex flex-col">
+        <p>© Copyright 2023.</p>
+        <p>All Rights Reserved by Paras.</p>
+      </div>
     </footer>
+
+    <!-- footer ends -->
   </body>
+
+  <!-- body ends -->
 </html>
