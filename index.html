@@ -16,8 +16,7 @@
       <!-- navbar starts -->
       <nav
         id="navbar"
-        class="navbar flex items-center justify-between drop-shadow fixed z-max w-full"
-      >
+        class="navbar flex items-center justify-between drop-shadow fixed z-max w-full">
         <!-- navbar logo -->
         <a href="index.html" class="nav__logo flex items-center gap-sm">
           <div class="circle"></div>
@@ -25,7 +24,7 @@
         >
 
         <!-- navbar links -->
-        <div
+        <div id="nav__links"
           class="nav__links flex justify-center items-center justify-between gap-xl"
         >
           <ul class="flex gap-base">
@@ -41,6 +40,8 @@
             <a class="cta" href="#contact-me">Contact Me</a>
           </button>
         </div>
+
+        <!-- hidden nav hamburger menu -->
         <div id="ham-menu" class="hidden">
           <button class="menu hidden hamburger-menu">
             <svg
@@ -90,10 +91,7 @@
     <main>
       <!-- hero section starts -->
 
-      <section
-        id="hero"
-        class="flex section justify-center items-center min-h-screen"
-      >
+      <section id="hero" class="flex justify-center items-center">
         <div class="flex items-center gap-xl">
           <!-- profile image -->
           <img
@@ -256,9 +254,11 @@
           </div>
 
           <!-- contact image -->
-          <div class="flex container contact-pic">
-            <img src="images/contact.png" alt="Contact Photo" />
-          </div>
+          <img
+            src="images/contact.png"
+            alt="Contact Photo"
+            class="contact-pic"
+          />
         </div>
       </section>
 

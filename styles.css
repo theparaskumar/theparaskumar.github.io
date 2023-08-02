@@ -27,7 +27,6 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding: 90px;
 }
 
 body {
@@ -210,6 +209,11 @@ h1 {
 /************* Hero Section *******************/
 /**********************************************/
 
+#hero > div {
+  margin: 70px 0;
+  min-height: calc(100vh - 70px);
+}
+
 #hero article > h1 {
   font-size: 6.25rem;
   font-family: "work sans", Roboto, sans-serif;
@@ -226,6 +230,7 @@ h1 {
   font-weight: 300;
   line-height: 1.3rem;
   letter-spacing: 1.2;
+
 }
 
 #hero article > div > .cta {
@@ -269,6 +274,11 @@ h1 {
 
 #contact-me > div > .container {
   font-family: "Wix Madefor Text", "work sans", sans-serif;
+  width: 400px;
+}
+
+#contact-me > div {
+  gap: 5rem;
 }
 
 #contact-me > div h6 {
@@ -278,7 +288,7 @@ h1 {
 
 .first-name,
 .last-name {
-  width: calc(var(--container-size) / 2.1);
+  width: 180px;
 }
 
 #contact-me input,
@@ -337,13 +347,19 @@ footer {
 
   .section-heading {
     padding: 1.5rem;
+    font-size: 2rem;
   }
 
   .ruler {
     display: flex;
+    margin: 0 20px;
   }
 
   /* navbar */
+
+  .navbar > .hidden {
+    display: block;
+  }
 
   .nav__links {
     display: none;
@@ -361,7 +377,7 @@ footer {
     padding: 0 1.2rem;
   }
 
-  .nav-toggle .nav__links { 
+  .nav-toggle .nav__links {
     width: 100%;
     min-height: calc(100vh - 70px);
     position: fixed;
@@ -404,8 +420,13 @@ footer {
 
   /* hero */
 
+  #hero {
+    min-height: 100vh;
+  }
+
   #hero > div {
     flex-direction: column-reverse;
+    min-height: 0;
   }
 
   .profile-img {
@@ -417,14 +438,14 @@ footer {
   }
 
   #hero article > h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   /* projects */
 
   #projects > div {
     padding: 0 1.3rem;
-    gap: 5rem;
+    gap: 3rem;
     align-items: center;
     filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
       drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
@@ -469,8 +490,13 @@ footer {
     display: none;
   }
 
-  #contact-me .container {
+  #contact-me > div > .container {
     width: 80%;
+  }
+
+  .first-name,
+  .last-name {
+    width: 45%;
   }
 
   /* footer */
