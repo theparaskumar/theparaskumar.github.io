@@ -156,6 +156,10 @@ h1 {
   padding-left: 8rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /**********************************************/
 /************** CTA button ********************/
 /**********************************************/
@@ -223,7 +227,7 @@ h1 {
   letter-spacing: 1.2;
 }
 
-#hero article > .cta {
+#hero article > div > .cta {
   width: 10rem;
 }
 
@@ -254,9 +258,14 @@ h1 {
   color: rgb(20, 4, 4);
 }
 
-#projects{
+#projects {
   margin-bottom: 5rem;
 }
+
+.github-logo {
+  width: 30px;
+}
+
 /**********************************************/
 /************* Contact-Me Section *****************/
 /**********************************************/
@@ -308,4 +317,94 @@ footer {
 
 .linkedin-logo {
   width: 24px;
+}
+
+/**********************************************/
+/************* Responsive for Mobile **********/
+/**********************************************/
+
+@media (max-width: 1000px) {
+  /* common */
+
+  .main {
+    padding: 15px;
+  }
+
+  .ruler {
+    margin: 2.4rem 1.2rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .section-heading {
+    padding: 1.5rem;
+  }
+
+  /* navbar */
+
+  .nav__links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 0 1.2rem;
+  }
+
+  /* hero */
+
+  #hero > div {
+    flex-direction: column-reverse;
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  #hero {
+    justify-content: flex-start;
+  }
+
+  .article {
+    padding: 1rem;
+  }
+
+  #hero article > h1 {
+    font-size: 5rem;
+  }
+
+  /* projects */
+
+  .project-child {
+    flex-direction: column-reverse;
+    border: 1px solid #676867;
+    gap: 3rem;
+  }
+
+  .project-child > .container {
+    width: 100%;
+  }
+
+  #projects > div {
+    gap: 5rem;
+  }
+
+  .project-child > img {
+    border-radius: 10px;
+  }
+
+  /* contact-me */
+
+  .contact-pic {
+    display: none;
+  }
+
+  #contact-me, .container{
+    width: 90%;
+  }
 }
