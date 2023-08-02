@@ -349,12 +349,57 @@ footer {
     display: none;
   }
 
+  .menu {
+    background-color: transparent;
+  }
+
   .hamburger-menu {
     display: flex;
   }
 
   .navbar {
     padding: 0 1.2rem;
+  }
+
+  .nav-toggle .nav__links { 
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    top: 70px;
+    right: 0;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-toggle .nav__links ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav-toggle .nav__links .separator {
+    display: none;
+  }
+
+  .nav-toggle .nav__links button {
+    background-color: transparent;
+  }
+
+  .nav-toggle .nav__links .cta {
+    background-color: inherit;
+    color: black;
+    padding: 0;
+  }
+
+  .nav-toggle #ham-menu .hamburger-menu {
+    display: none;
+  }
+
+  .nav-toggle #ham-menu .close-menu {
+    display: block;
   }
 
   /* hero */
