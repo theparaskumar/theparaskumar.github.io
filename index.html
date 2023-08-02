@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paras Kumar</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("zZRUBYeuIzQum4EjW");
+      })()
+    </script>
+    <script src="contactscript.js"></script>
   </head>
 
   <!-- body starts -->
@@ -16,7 +28,8 @@
       <!-- navbar starts -->
       <nav
         id="navbar"
-        class="navbar flex items-center justify-between drop-shadow fixed z-max w-full">
+        class="navbar flex items-center justify-between drop-shadow fixed z-max w-full"
+      >
         <!-- navbar logo -->
         <a href="index.html" class="nav__logo flex items-center gap-sm">
           <div class="circle"></div>
@@ -24,7 +37,8 @@
         >
 
         <!-- navbar links -->
-        <div id="nav__links"
+        <div
+          id="nav__links"
           class="nav__links flex justify-center items-center justify-between gap-xl"
         >
           <ul class="flex gap-base">
@@ -229,27 +243,36 @@
           <!-- contact form -->
           <div class="flex flex-col gap-xl justify-center container">
             <h6>Love to hear from you :)</h6>
-            <form
-              action="mailto:paraskm6812@gmail.com"
-              class="flex flex-col gap-md"
-            >
+            <form id ="contact-form" class="flex flex-col gap-md">
               <div class="name flex justify-between">
                 <label for="first name" class="first-name flex flex-col gap-sm"
-                  >First Name<input type="text" placeholder="Enter First Name"
+                  >First Name<input
+                    id="first_name"
+                    type="text"
+                    placeholder="Enter First Name"
                 /></label>
                 <label for="last name" class="last-name flex flex-col gap-sm"
-                  >Last Name<input type="text" placeholder="Enter Last Name"
+                  >Last Name<input
+                    id="last_name"
+                    type="text"
+                    placeholder="Enter Last Name"
                 /></label>
               </div>
               <label for="email" class="email flex flex-col gap-sm"
                 >Email
-                <input type="email" placeholder="Enter Email" />
+                <input id="email" type="email" placeholder="Enter Email" />
               </label>
               <label for="message" class="message flex flex-col gap-sm"
                 >Message
-                <textarea rows="5" placeholder="Leave us a Message"></textarea>
+                <textarea
+                  rows="5"
+                  id="message"
+                  placeholder="Leave us a Message"
+                ></textarea>
               </label>
-              <button type="submit" class="cta">Send Message</button>
+              <button type="submit" class="cta" value="Send">
+                Send Message
+              </button>
             </form>
           </div>
 
@@ -295,9 +318,6 @@
     </footer>
 
     <!-- footer ends -->
-
-    <!-- JS -->
-    <script src="script.js"></script>
   </body>
 
   <!-- body ends -->
