@@ -77,10 +77,6 @@ h1 {
   justify-content: space-around;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .items-center {
   align-items: center;
 }
@@ -144,10 +140,11 @@ h1 {
 
 .ruler {
   border-bottom: 1px solid #c7c7c7;
-  margin: 40px;
+  margin: 0 40px;
 }
 
-.container {
+.container,
+.project-img {
   width: var(--container-size);
 }
 
@@ -158,6 +155,10 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.section {
+  padding: 100px 0;
 }
 
 /**********************************************/
@@ -258,10 +259,6 @@ h1 {
   color: rgb(20, 4, 4);
 }
 
-#projects {
-  margin-bottom: 5rem;
-}
-
 .github-logo {
   width: 30px;
 }
@@ -326,20 +323,24 @@ footer {
 @media (max-width: 1000px) {
   /* common */
 
+  :root {
+    --container-size: 100%;
+  }
+
   .main {
-    padding: 15px;
+    padding: 0 15px;
   }
 
-  .ruler {
-    margin: 2.4rem 1.2rem;
-  }
-
-  .container {
-    width: 90%;
+  .section {
+    padding: 60px 0;
   }
 
   .section-heading {
     padding: 1.5rem;
+  }
+
+  .ruler {
+    display: flex;
   }
 
   /* navbar */
@@ -366,10 +367,6 @@ footer {
     display: none;
   }
 
-  #hero {
-    justify-content: flex-start;
-  }
-
   .article {
     padding: 1rem;
   }
@@ -380,22 +377,45 @@ footer {
 
   /* projects */
 
+  #projects > div {
+    padding: 0 1.3rem;
+    gap: 5rem;
+    align-items: center;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+      drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  }
+
   .project-child {
     flex-direction: column-reverse;
-    border: 1px solid #676867;
-    gap: 3rem;
+    border-radius: 15px;
+    background-color: #ffff;
+    align-items: center;
+    gap: 0;
+    width: 90%;
   }
 
   .project-child > .container {
-    width: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
   }
 
-  #projects > div {
-    gap: 5rem;
+  .project-child h3 {
+    font-size: 1rem;
+  }
+
+  .project-child p,
+  .project-child a {
+    font-size: 0.8rem;
+  }
+  .github-logo {
+    width: 20px;
   }
 
   .project-child > img {
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #c7c7c7;
   }
 
   /* contact-me */
@@ -404,7 +424,20 @@ footer {
     display: none;
   }
 
-  #contact-me, .container{
-    width: 90%;
+  #contact-me .container {
+    width: 80%;
+  }
+
+  /* footer */
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 1rem;
+    gap: 0.6rem;
+  }
+
+  .footer > div {
+    align-items: flex-start;
   }
 }

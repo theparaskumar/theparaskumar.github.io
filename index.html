@@ -85,10 +85,13 @@
 
     <!-- main starts -->
 
-    <main class="min-h-screen">
+    <main>
       <!-- hero section starts -->
 
-      <section id="hero" class="flex justify-center items-center h-screen">
+      <section
+        id="hero"
+        class="flex section justify-center items-center min-h-screen"
+      >
         <div class="flex items-center gap-xl">
           <!-- profile image -->
           <img
@@ -122,12 +125,12 @@
 
       <!-- projects section starts -->
 
-      <section id="projects" class="flex flex-col min-h-screen gap-2xl">
+      <section id="projects" class="section flex flex-col gap-2xl">
         <h1 class="section-heading">Projects</h1>
         <div class="flex flex-col justify-center">
           <!-- first project : amazon clone -->
 
-          <div class="project-child flex justify-evenly">
+          <div class="project-child flex justify-center gap-2xl">
             <div class="flex flex-col container gap-md">
               <h3>Amazon Clone</h3>
               <p>
@@ -139,23 +142,24 @@
 
               <a href="" class="flex items-center">
                 <img
-                  src="images/github-logo.png"
+                  src="images/github-logo-nobg.png"
                   alt="github logo"
                   class="github-logo"
                 />
                 Check on my Github</a
               >
             </div>
+            <div class="ruler hidden"></div>
             <img
               src="/images/amazon-project-new.jpeg"
               alt="Amazon CLone Photo"
-              class="container"
+              class="project-img"
             />
           </div>
 
           <!-- second project : iot -->
 
-          <div class="project-child flex justify-center justify-evenly">
+          <div class="project-child flex justify-center gap-2xl">
             <div class="flex flex-col container gap-md">
               <h3>IOT Based Security System Using RFID Card</h3>
               <p>
@@ -167,23 +171,24 @@
                 class="flex items-center"
               >
                 <img
-                  src="images/github-logo.png"
+                  src="images/github-logo-nobg.png"
                   alt="github logo"
                   class="github-logo"
                 />
                 Check on my Github</a
               >
             </div>
+            <div class="ruler hidden"></div>
             <img
               src="/images/iot-project-new.jpg"
               alt="IOT Project Photo"
-              class="container"
+              class="project-img"
             />
           </div>
 
           <!-- third project : face recognition -->
 
-          <div class="project-child flex justify-center justify-evenly">
+          <div class="project-child flex justify-center gap-2xl">
             <div class="flex flex-col container gap-md">
               <h3>Face Recognition Attendance System</h3>
               <p>
@@ -195,17 +200,18 @@
                 class="flex items-center"
               >
                 <img
-                  src="images/github-logo.png"
+                  src="images/github-logo-nobg.png"
                   alt="github logo"
                   class="github-logo"
                 />
                 Check on my Github</a
               >
             </div>
+            <div class="ruler hidden"></div>
             <img
               src="/images/face-recog-project-new.jpg"
               alt="Face Recognition Project Photo"
-              class="container"
+              class="project-img"
             />
           </div>
         </div>
@@ -217,9 +223,9 @@
 
       <!-- contact-me section starts -->
 
-      <section id="contact-me" class="flex flex-col min-h-screen gap-2xl">
+      <section id="contact-me" class="section flex flex-col gap-2xl">
         <h1 class="section-heading">Get in Touch</h1>
-        <div class="flex justify-center justify-evenly gap-base">
+        <div class="flex justify-center gap-2xl">
           <!-- contact form -->
           <div class="flex flex-col gap-xl justify-center container">
             <h6>Love to hear from you :)</h6>
@@ -248,7 +254,7 @@
           </div>
 
           <!-- contact image -->
-          <div class="flex justify-center items-center container contact-pic">
+          <div class="flex container contact-pic">
             <img src="images/contact.png" alt="Contact Photo" />
           </div>
         </div>
@@ -261,7 +267,7 @@
 
     <!-- footer starts -->
 
-    <footer class="flex justify-between items-center">
+    <footer class="footer flex justify-between items-center">
       <div>
         <h4>Phone</h4>
         <a href="tel:+917500686812">+91 7500686812</a>
