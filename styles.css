@@ -230,11 +230,14 @@ h1 {
   font-weight: 300;
   line-height: 1.3rem;
   letter-spacing: 1.2;
-
 }
 
 #hero article > div > .cta {
   width: 10rem;
+}
+
+#hero img:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /**********************************************/
@@ -361,6 +364,10 @@ footer {
     display: block;
   }
 
+  .nav__logo {
+    font-size: 1rem;
+  }
+
   .nav__links {
     display: none;
   }
@@ -373,6 +380,10 @@ footer {
     display: flex;
   }
 
+  .hamburger-menu:hover {
+    cursor: pointer;
+  }
+  
   .navbar {
     padding: 0 1.2rem;
   }
