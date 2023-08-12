@@ -9,14 +9,14 @@ on:
 
 jobs:
   # Build job
-  build:
+  # build:
 
   # Deploy job
   deploy:
     # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # environment:
+    #   name: github-pages
+    #   url: ${{ steps.deployment.outputs.page_url }}
 
     # Specify runner + deployment step
     runs-on: ubuntu-latest
