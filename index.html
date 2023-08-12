@@ -4,6 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paras Kumar</title>
+
+    <meta
+      name="description"
+      content="I am Paras Kumar, a web developer. This is my portfolio website where you can find information about me and my projects."
+    />
+    <meta
+      name="keywords"
+      content="Paras Kumar, Web Designer, Web Developer, Paras Kumar Website, portfolio website"
+    />
+    <meta name="author" content="Paras Kumar" />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Paras Kumar - Web Developer" />
+    <meta
+      property="og:description"
+      content="I am Paras Kumar, a web developer. This is my portfolio website where you can find information about me and my projects."
+    />
+    <meta property="og:url" content="https://theparaskumar.github.io/" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter card meta tags -->
+    <meta name="twitter:title" content="Paras Kumar - Web Developer" />
+    <meta
+      name="twitter:description"
+      content="I am Paras Kumar, a web developer. This is my portfolio website where you can find information about me and my projects."
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -241,34 +267,46 @@
             <h6>Love to hear from you :)</h6>
             <form id="contact-form" class="flex flex-col gap-md">
               <div class="name flex justify-between">
-                <label for="first name" class="first-name flex flex-col gap-sm"
-                  >First Name<input
+                <label for="first Name" class="first-name flex flex-col gap-sm"
+                  >First Name*<input
+                    required
+                    name="firstName"
                     id="first_name"
                     type="text"
                     placeholder="Enter First Name"
                 /></label>
-                <label for="last name" class="last-name flex flex-col gap-sm"
-                  >Last Name<input
+                <label for="last Name" class="last-name flex flex-col gap-sm"
+                  >Last Name*<input
+                    required
+                    name="lastName"
                     id="last_name"
                     type="text"
                     placeholder="Enter Last Name"
                 /></label>
               </div>
               <label for="email" class="email flex flex-col gap-sm"
-                >Email
-                <input id="email" type="email" placeholder="Enter Email" />
+                >Email*
+                <input
+                  required
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter Email"
+                />
               </label>
               <label for="message" class="message flex flex-col gap-sm"
                 >Message
                 <textarea
+                  name="message"
                   rows="5"
                   id="message"
                   placeholder="Leave us a Message"
                 ></textarea>
               </label>
-              <button type="submit" class="cta" value="Send">
+              <button type="submit" class="cta" value="Send" onclick="">
                 Send Message
               </button>
+              <p id="my-form-status"></p>
             </form>
           </div>
 
@@ -314,7 +352,7 @@
     </footer>
 
     <!-- footer ends -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 
   <!-- body ends -->
