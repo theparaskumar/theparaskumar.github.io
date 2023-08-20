@@ -31,6 +31,11 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
 
   <!-- body starts -->
@@ -131,7 +136,7 @@
           <!-- article -->
           <article class="article flex flex-col gap-md container">
             <h1>Hello</h1>
-            <div class="flex flex-col gap-sm">
+            <div class="flex flex-col">
               <div class="flex flex-col gap-sm">
                 <h2>A Bit About Me</h2>
                 <p>
@@ -151,8 +156,6 @@
 
       <!-- hero section ends -->
 
-      <div class="ruler"></div>
-
       <!-- projects section starts -->
 
       <section id="projects" class="section flex flex-col gap-2xl">
@@ -160,8 +163,17 @@
         <div class="flex flex-col justify-center">
           <!-- first project : amazon clone -->
 
-          <div class="project-child flex justify-center gap-2xl">
-            <div class="flex flex-col container gap-md">
+          <div class="project-child flex">
+            <img
+              src="/images/amazon-project-new.jpeg"
+              alt="Amazon CLone Photo"
+              class="project-img"
+            />
+
+            <div class="horizontal-ruler hidden"></div>
+            <div class="vertical-ruler"></div>
+
+            <div class="flex flex-col container">
               <h3>Amazon Clone</h3>
               <p>
                 I developed an Amazon clone from scratch, utilizing HTML and
@@ -183,18 +195,21 @@
                 Check on my Github</a
               >
             </div>
-            <div class="ruler hidden"></div>
-            <img
-              src="/images/amazon-project-new.jpeg"
-              alt="Amazon CLone Photo"
-              class="project-img"
-            />
           </div>
 
           <!-- second project : iot -->
 
-          <div class="project-child flex justify-center gap-2xl">
-            <div class="flex flex-col container gap-md">
+          <div class="project-child flex justify-between">
+            <img
+              src="/images/iot-project-new.jpg"
+              alt="IOT Project Photo"
+              class="project-img"
+            />
+
+            <div class="horizontal-ruler hidden"></div>
+            <div class="vertical-ruler"></div>
+
+            <div class="flex flex-col container">
               <h3>IOT Based Security System Using RFID Card</h3>
               <p>
                 IoT based home/office security system using the RFID sensor and
@@ -213,18 +228,21 @@
                 Check on my Github</a
               >
             </div>
-            <div class="ruler hidden"></div>
-            <img
-              src="/images/iot-project-new.jpg"
-              alt="IOT Project Photo"
-              class="project-img"
-            />
           </div>
 
           <!-- third project : face recognition -->
 
-          <div class="project-child flex justify-center gap-2xl">
-            <div class="flex flex-col container gap-md">
+          <div class="project-child flex justify-between">
+            <img
+              src="/images/face-recog-project-new.jpg"
+              alt="Face Recognition Project Photo"
+              class="project-img"
+            />
+
+            <div class="horizontal-ruler hidden"></div>
+            <div class="vertical-ruler"></div>
+
+            <div class="flex flex-col container">
               <h3>Face Recognition Attendance System</h3>
               <p>
                 It recognizes students' faces using a webcam & mark their
@@ -243,25 +261,17 @@
                 Check on my Github</a
               >
             </div>
-            <div class="ruler hidden"></div>
-            <img
-              src="/images/face-recog-project-new.jpg"
-              alt="Face Recognition Project Photo"
-              class="project-img"
-            />
           </div>
         </div>
       </section>
 
       <!-- projects section ends -->
 
-      <div class="ruler"></div>
-
       <!-- contact-me section starts -->
 
       <section id="contact-me" class="section flex flex-col gap-2xl">
         <h1 class="section-heading">Get in Touch</h1>
-        <div class="flex justify-center gap-2xl">
+        <div class="flex justify-center">
           <!-- contact form -->
           <div class="flex flex-col gap-xl justify-center container">
             <h6>Love to hear from you :)</h6>
